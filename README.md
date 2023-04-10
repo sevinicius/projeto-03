@@ -1,18 +1,19 @@
 # projeto-03
 parte 03 do projeto 
 
-Como utilizar a API
-Para utilizar a API, é necessário realizar as seguintes etapas:
+- obs:removi a opção de ver menu do codigo, pois so era funcional dentro do prompt, porem a propria API exibe os personagens e possui a opção dde criar,editar, e deletar um personagem..
 
-baixar o repositório do projeto para sua máquina local.
+-Para utilizar a API, é necessário realizar as seguintes etapas:
 
-Certificar-se de que o Flask está instalado na máquina. Caso não esteja, utilize o seguinte comando no terminal para instalar: 
+-baixar o repositório do projeto para sua máquina local.
+
+-Certificar-se de que o Flask está instalado na máquina. Caso não esteja, utilize o seguinte comando no terminal para instalar: 
 
 " pip install flask "
 
-Executar o arquivo app.py no terminal com o seguinte comando: python app.py
+-Executar o arquivo app.py no terminal com o seguinte comando: python app.py
 
-Utilizar um software para realizar requisições HTTP, como o Postman ou o Insomnia.
+-Utilizar um software para realizar requisições HTTP, como o Postman ou o Insomnia.
 
 
 -particularmente eu utilizei o POSTMAN
@@ -36,22 +37,22 @@ Realizar as requisições para as rotas disponíveis, seguindo os métodos HTTP 
 Rotas disponíveis
 A API possui as seguintes rotas disponíveis:
 
-Consultar todos os personagens: GET /personagens
-Consultar um personagem por ID: GET /personagens/{id}
-Editar um personagem por ID: PUT /personagens/{id}
-Criar um novo personagem: POST /personagens
-Excluir um personagem por ID: DELETE /personagens/{id}
-Consultar todos os personagens
-A rota GET /personagens retorna todos os personagens cadastrados na API em formato JSON.
+	Consultar todos os personagens: GET /personagens
+	Consultar um personagem por ID: GET /personagens/{id}
+	Editar um personagem por ID: PUT /personagens/{id}
+	Criar um novo personagem: POST /personagens
+	Excluir um personagem por ID: DELETE /personagens/{id}
+	Consultar todos os personagens
+	A rota GET /personagens retorna todos os personagens cadastrados na API em formato JSON.
 
-Consultar um personagem por ID
-A rota GET /personagens/{id} retorna um personagem específico cadastrado na API, com base no seu ID, em formato JSON.
+	Consultar um personagem por ID
+	A rota GET /personagens/{id} retorna um personagem específico cadastrado na API, com base no seu ID, em formato JSON.
+	
+	Editar um personagem por ID
+	A rota PUT /personagens/{id} permite editar um personagem cadastrado na API, com base no seu ID. É necessário enviar um JSON com os dados atualizados do personagem.
 
-Editar um personagem por ID
-A rota PUT /personagens/{id} permite editar um personagem cadastrado na API, com base no seu ID. É necessário enviar um JSON com os dados atualizados do personagem.
+	Criar um novo personagem
+	A rota POST /personagens permite criar um novo personagem na API. É necessário enviar um JSON com os dados do personagem a ser criado.
 
-Criar um novo personagem
-A rota POST /personagens permite criar um novo personagem na API. É necessário enviar um JSON com os dados do personagem a ser criado.
-
-Excluir um personagem por ID
-A rota DELETE /personagens/{id} permite excluir um personagem cadastrado na API, com base no seu ID.
+	Excluir um personagem por ID
+	A rota DELETE /personagens/{id} permite excluir um personagem cadastrado na API, com base no seu ID.
